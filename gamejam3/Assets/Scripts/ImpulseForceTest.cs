@@ -35,6 +35,11 @@ public class ImpulseForceTest : MonoBehaviour
                 shotsFired++;
             }
         }
+
+        if ((Input.GetKey(KeyCode.R)) && shotsFired != 0) // If the player presses R then they will reload
+        {
+            Reload();
+        }
     }
 
     void FixedUpdate()
@@ -68,5 +73,11 @@ public class ImpulseForceTest : MonoBehaviour
             isGrounded = true;
             rb.velocity = Vector2.zero; // reset velocity when landing on floor
         }
+    }
+
+    private void Reload() // This method will just set shots fired to 0 and have a 1 second wait
+    {
+        shotsFired = 0f; // reset shots back to zero 
+        lastShotTime = Time.time; // make the player wait before shooting again
     }
 }
