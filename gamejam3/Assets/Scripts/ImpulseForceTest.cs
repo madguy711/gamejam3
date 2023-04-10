@@ -67,6 +67,7 @@ public class ImpulseForceTest : MonoBehaviour
             rb.velocity = Vector2.zero; // reset velocity when landing on floor
             shotsFired = 0f; // reset shots back to zero 
             lastShotTime = Time.time; // make the player wait before shooting again
+            FindObjectOfType<AudioManager>().Play("ShotgunCock");
         }
 
         else // If player only fires one shot then lands then they instantly fire another before having to reload 
@@ -80,5 +81,6 @@ public class ImpulseForceTest : MonoBehaviour
     {
         shotsFired = 0f; // reset shots back to zero 
         lastShotTime = Time.time; // make the player wait before shooting again
+        FindObjectOfType<AudioManager>().Play("ShotgunCock");
     }
 }
