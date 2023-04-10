@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Shot
+  - name: ShotgunShot
     clip: {fileID: 8300000, guid: 893d1137cfd23e74dbecd7ce7addd336, type: 3}
     volume: 0.488
     pitch: 0
