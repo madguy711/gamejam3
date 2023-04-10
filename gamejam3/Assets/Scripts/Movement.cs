@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float moveSpeed = 1f;
+    public float moveSpeed = 2f;
 
     [SerializeField] private Rigidbody2D rb;  // Reference to the Rigidbody2D component
     [SerializeField] private Transform groundCheck;
