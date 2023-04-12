@@ -6,7 +6,7 @@ public class ImpulseForceTest : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float forceMultiplier = 25f; // the force applied to the player
+    public float forceMultiplier = 20f; // the force applied to the player
 
     private Rigidbody2D rb;
 
@@ -25,7 +25,7 @@ public class ImpulseForceTest : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) // check if left mouse button is clicked
         {
-            if ((isGrounded && (shotsFired <= 1)) && (Time.time - lastShotTime > 1f)) // check if the player is touching the ground and hasn't fired more than two shots, wait one second before being able to fire after hitting ground
+            if ((isGrounded && (shotsFired <= 2)) && (Time.time - lastShotTime > 1f)) // check if the player is touching the ground and hasn't fired more than two shots, wait one second before being able to fire after hitting ground
             {
                 Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); // get the mouse position in world space
                 Vector2 direction = (mousePosition - transform.position).normalized; // get the direction of the click
@@ -61,7 +61,7 @@ public class ImpulseForceTest : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) // method for when the player touches the floor
     {
-        if ((collision.gameObject.CompareTag("Floor")) && (shotsFired >= 2))
+        if ((collision.gameObject.CompareTag("Floor")) && (shotsFired >= 3))
         {
             isGrounded = true;
             rb.velocity = Vector2.zero; // reset velocity when landing on floor
