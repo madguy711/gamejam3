@@ -31,6 +31,7 @@ public class ImpulseForceTest : MonoBehaviour
                 Vector2 direction = (mousePosition - transform.position).normalized; // get the direction of the click
                 direction.Normalize();
 
+                
                 rb.AddForce(-direction * forceMultiplier, ForceMode2D.Impulse); // apply the impulse force in the opposite direction of the click
                 shotsFired++;
                 FindObjectOfType<AudioManager>().Play("ShotgunShot");
