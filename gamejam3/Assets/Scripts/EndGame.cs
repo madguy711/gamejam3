@@ -9,7 +9,7 @@ public class EndGame : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other) 
     {
-        if (other.CompareTag("Finish")) 
+        if (other.CompareTag("Player")) 
         { 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
