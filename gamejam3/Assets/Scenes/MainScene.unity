@@ -355,7 +355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1825367725}
-  smoothing: 5
+  smoothing: 2
 --- !u!1 &231325327
 GameObject:
   m_ObjectHideFlags: 0
@@ -12511,7 +12511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1825367725}
-  smoothing: 5
+  smoothing: 2
 --- !u!1 &1163412936
 GameObject:
   m_ObjectHideFlags: 0
@@ -12695,7 +12695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1825367725}
-  smoothing: 5
+  smoothing: 2
 --- !u!1 &1273574628
 GameObject:
   m_ObjectHideFlags: 0
@@ -66417,7 +66417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1825367725}
-  smoothing: 5
+  smoothing: 2
 --- !u!1 &1994439660
 GameObject:
   m_ObjectHideFlags: 0
@@ -66516,7 +66516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1825367725}
-  smoothing: 5
+  smoothing: 2
 --- !u!1 &2118762652
 GameObject:
   m_ObjectHideFlags: 0
